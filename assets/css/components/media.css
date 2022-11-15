@@ -1,0 +1,13 @@
+
+@media screen and (max-width: 768px) 
+{
+    nav
+    {
+        display: flex !important;
+    }
+
+    .main-container aside
+    {
+        display: none;
+    }
+}
