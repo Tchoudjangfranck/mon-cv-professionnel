@@ -18,6 +18,10 @@ i
 
 main
 {
-    background-color: var(--main-color);
     overflow: auto;
+}
+
+section
+{
+    height: 100vh;
 }

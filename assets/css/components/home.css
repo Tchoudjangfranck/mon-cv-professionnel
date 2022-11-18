@@ -1,0 +1,85 @@
+.home-banner
+{
+    z-index: var(--z-index-home-banner);
+    background-image: url("/assets/images/brands/developpement-web.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+}
+
+.overlay
+{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color-black);
+    opacity: 0.5;
+    z-index: var(--z-index-overlay);
+}
+
+.owner-infos
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--main-color-white);
+    z-index: var(--z-index-owner-infos);
+}
+
+.owner-infos h1
+{
+    font-size: 2.5rem;
+}
+
+.owner-infos p
+{
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    animation: 6s slide linear infinite;
+}
+
+.owner-infos p:nth-child(3)
+{
+    animation-delay: 3s;
+}
+
+.owner-infos ul
+{
+    padding-top: 80px;
+}
+
+.owner-infos ul li
+{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.owner-infos ul li span
+{
+    border-bottom: 2px solid var(--main-color);
+}
+
+.setting-icon
+{
+    top: 10%;
+    right: 0;
+    background-color: var(--main-color-white);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+i.fa-cog:hover
+{   
+    animation: 1s rotate linear infinite;
+}
+.setting-icon i
+{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
