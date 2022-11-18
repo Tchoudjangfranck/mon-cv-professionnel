@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,52 @@
     <link rel="stylesheet" href="/assets/css/main.css">
     <title>CV - professionnel</title>
 </head>
+
 <body>
-    <nav class="none gap-10 aic jcsb sticky">
-        <div class="owner-name pl-20">Franck Tchoudjang</div>
-        <i class="fa fa-bars pr-20"></i>
+    <nav class="none sticky">
+        <div class="container">
+            <div class="nav-content flex aic jcsb">
+                <div class="owner-nane">Tchoudjang franck</div>
+                <i class="fa fa-bars" id="burger-icon"></i>
+            </div>
+        </div>
     </nav>
-    <div class="main-container flex">
-        <aside class="flex-1">ASIDE</aside>
-        <main class="flex-3">MAIN</main>
+    <div class="main-container flex gap-20"> 
+        <aside class="flex-1 none flex-column">
+            <div class="aside-top flex flex-column aic gap-5">
+                <div class="owner-picture profile-picture">
+                    <a href="/assets/images/profile/franck_large.jpg" target="_blank">
+                        <img src="/assets/images/profile/franck.jpg" alt="photo de profil">
+                    </a>
+                </div>
+                <div class="owner-name">
+                    franck Tchoudjang
+                </div>
+                <div class="owner-function">
+                    Web designer
+                </div>
+            </div>
+            <div class="aside-content">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="aside-bottom flex aic gap-20 jcc">
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-google-plus"></i>
+            </div>
+        </aside>
+        <main class="flex-3">
+        </main>
     </div>
+    
     <script src="/assets/js/main.js"></script>
 </body>
+
 </html>

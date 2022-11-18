@@ -1,13 +1,45 @@
-
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 300px)
 {
-    nav
+    nav .nav-content
     {
-        display: flex !important;
+        justify-content: flex-end;
     }
-
-    .main-container aside
+    
+    nav .nav-content .owner-nane
     {
         display: none;
+    }
+}
+
+@media screen and (max-width:767.98px)
+{
+    .main-container aside
+    {
+        background-color: var(--main-color-white);
+        position:absolute;
+        top: 50px;
+        left: 0;
+        flex: none;
+        width: 80%;
+        max-width: 300px;
+        z-index: var(--z-index-aside);
+        animation: slideInLeftToRight 3s linear forwards;
+    }
+    
+    .main-container aside.close
+    {
+        animation: slideOutRightToLeft 3s linear forwards;
+    }
+    nav
+    {
+        display: block !important;       
+    }
+}
+
+@media screen and (min-width:768px) 
+{
+    .main-container aside
+    {
+        display: flex;
     }
 }

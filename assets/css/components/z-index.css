@@ -1,0 +1,7 @@
+:root
+{
+    --z-index-home-banner: 9;
+    --z-index-overlay: 99;
+    --z-index-owner-infos: 999;
+    --z-index-aside: 99999;
+}

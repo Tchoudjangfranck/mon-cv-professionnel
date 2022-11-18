@@ -1,0 +1,16 @@
+nav
+{
+    top: 0;
+    background-color: var(--main-color-white);
+    font-size: 1.7rem;
+}
+
+.nav-content
+{
+    height: 50px;
+}
+
+.nav-content .owner-nane
+{
+    color: var(--main-color-gray);
+}
