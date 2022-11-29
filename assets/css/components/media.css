@@ -1,13 +1,28 @@
-@media screen and (max-width: 300px)
-{
-    nav .nav-content
+@media screen and (max-width: 367px)
+{    
+    .nav-content i.fa-bars
     {
-        justify-content: flex-end;
+        font-size: 1.5rem;
     }
     
     nav .nav-content .owner-nane
     {
-        display: none;
+        /*display: none;*/
+        font-size: 1.2rem;
+    }
+
+    .services .offered-services,
+    .clients-container .clients,
+    .fun-facts-container .fun-facts
+    {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .services .offered-services .service,
+    .fun-facts .fun-fact-item
+    {
+        width: 90%;
     }
 }
 
@@ -15,24 +30,99 @@
 {
     .main-container aside
     {
-        background-color: var(--main-color-white);
-        position:absolute;
+        position:fixed;
         top: 50px;
         left: 0;
         flex: none;
         width: 80%;
         max-width: 300px;
         z-index: var(--z-index-aside);
-        animation: slideInLeftToRight 3s linear forwards;
+        background-color: var(--main-color-white);
+        animation: slideInFromLeftToRight 2s linear forwards;
     }
     
     .main-container aside.close
     {
-        animation: slideOutRightToLeft 3s linear forwards;
+        animation: slideOutFromRightToLeft 2s linear forwards;
     }
+
     nav
     {
-        display: block !important;       
+        z-index: var(--z-index-nav);
+        display: block !important;
+        box-shadow: 8px 0 16px var(--main-color-gray);       
+    }
+
+    .main-container main
+    {       
+        overflow: hidden;
+    }
+
+    .main-container section
+    {
+        height: 100vh;
+        min-height: 100vh;
+        overflow: auto;
+    }
+
+    .main-container section#home
+    {
+        padding-top: inherit;
+    }
+
+     section#about-me .about-me-header
+    {
+        padding: 70px 0 10px 0;
+    }
+
+     #about-me .about-me-header h2
+     {
+        white-space: nowrap;
+        padding: 10px 10px 10px 40px;
+        font-size: 1.2rem;
+    }
+
+    .about-me-content .about-me-description
+    {
+        align-items: inherit;
+        flex-direction: column;
+    }
+
+    .about-me-content .testimonials p
+    {
+        left: 25px;
+        padding: 20px 10px 20px 30px; 
+        box-sizing: border-box;
+        width: 90%;
+    }
+
+    .about-me-content .testimonials .profile-image img
+    {    
+        width: 50px;
+        height: 50px;
+    }
+
+    .testimonials .writer-description
+    {
+        width: 85% !important;
+    }
+
+    .fun-facts-container
+    {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:870.98px)
+{
+    .about-me-content .testimonials
+    {
+        width: 100%;
+    }
+
+    .about-me-content .testimonials p
+    {
+        width: 90%;
     }
 }
 

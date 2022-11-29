@@ -23,5 +23,49 @@ main
 
 section
 {
-    height: 100vh;
+    background-color: var(--main-color-white); 
+}
+
+.main-container section#home
+{
+    overflow: hidden;
+}
+
+.setting-icon
+{
+    top: 10%;
+    z-index: var(--z-index-setting-icon);
+    right: 0px;
+    background-color: var(--main-color-white);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+i.fa-cog:hover
+{   
+    animation: 1s rotate linear infinite;
+}
+
+i
+{
+    display: block;
+    font-size: 3rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.setting-icon i
+{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+i.fa-bars
+{
+    font-size: 2rem;
 }

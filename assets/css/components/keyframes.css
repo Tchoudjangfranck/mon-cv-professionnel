@@ -1,24 +1,24 @@
-@keyframes slideInLeftToRight 
+@keyframes slideInFromLeftToRight 
 {
     from
     {
-        transform: translatex(-100%);
+        margin-left: -100%;
     }    
     to
     {
-        transform: translatex(0%); 
+        margin-left : 0%; 
     }
 }
 
-@keyframes slideOutRightToLeft 
+@keyframes slideOutFromRightToLeft 
 {
     from
     {
-        transform: translatex(0%);
+        margin-left : 0%;
     }    
     to
-    {
-        transform: translatex(-100%); 
+    { 
+        margin-left: -100%;
     }
 }
 

@@ -1154,6 +1154,14 @@ button.btn-small
   margin-left: auto;
 }
 
+@media (max-width: 367px) 
+{
+  .container-sm, .container 
+  {
+    width: 90%;
+  }
+}
+
 @media (max-width: 767.98px) 
 {
   .container-sm, .container 

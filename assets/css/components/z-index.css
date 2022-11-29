@@ -3,5 +3,7 @@
     --z-index-home-banner: 9;
     --z-index-overlay: 99;
     --z-index-owner-infos: 999;
-    --z-index-aside: 99999;
+    --z-index-aside: 99998;
+    --z-index-setting-icon: 99999;
+    --z-index-nav: 9999999;
 }

@@ -1,0 +1,160 @@
+.about-me-header
+{
+    padding: 20px 0;
+}
+
+.about-me-header h2
+{
+    background-color: var(--main-color);
+    padding: 10px 20px 10px 100px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: var(--main-color-white);
+    border-bottom-left-radius: 0;
+    font-size: 1.5rem;
+}
+
+.about-me-header p
+{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: gray;
+}
+
+.owner-description h3
+{
+    font-size: 1rem;
+}
+
+.testimonials 
+{
+    width: 250px;
+
+}
+
+.about-me-content .testimonials h3
+{
+    border-bottom: 3px solid var(--main-color);
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.testimonials p
+{
+    position: relative;
+    left: 40px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    background-color: #efefef;
+    padding: 20px;
+    font-style: italic;
+    border-radius: 5px;
+    margin-bottom:5px;
+    width:85%;
+}
+
+.testimonials .profile-image img
+{
+    position: relative;
+    bottom: 40px;
+    left: 0px;
+    width: 60px;
+    height: 60px;
+    border:3px solid#efefef;
+    border-radius: 60px;
+    background-color: #efefef;
+}
+
+.testimonials .writer-description
+{
+    width: 100%;
+}
+
+.writer-description
+{
+    height: 50px;
+}
+
+.testimonials .writer-description h4
+{
+    margin: 2px 0;
+    font-size: 1rem;
+}
+
+
+.writer-description .sun-food
+{
+    font-style: italic;
+    color: var(--main-color-gray);
+}
+
+.writer-description .arrow-icons i
+{
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    background-color: #efefef;
+}
+
+.testimonials-writer
+{
+    height: 50px;
+}
+
+.service,
+.clients i,
+.fun-fact-item
+{
+    width: 140px;
+}
+
+.service i
+{
+    display: block;
+    color: var(--main-color);
+}
+
+.clients-container i,
+.fun-facts i
+{
+    color: var(--main-color-gray);
+}
+
+.fun-fact-item
+{
+    padding: 10px;
+    background-color: #efefef;
+}
+
+.service p
+{
+    text-align: center;
+}
+
+.services h3,
+.clients-container h3,
+.fun-facts-container h3
+{
+    border-bottom: 3px solid var(--main-color);
+    font-size: 1.1rem;
+    display: inline-block;
+}
+
+.fun-facts
+{
+    text-align: center;
+}
+
+.fun-fact-item .description
+{
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+.fun-fact-item .number-customers-affected
+{
+    color: var(--main-color);
+    font-size: 1.2rem;
+}

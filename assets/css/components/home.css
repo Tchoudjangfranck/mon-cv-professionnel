@@ -59,27 +59,3 @@
 {
     border-bottom: 2px solid var(--main-color);
 }
-
-.setting-icon
-{
-    top: 10%;
-    right: 0;
-    background-color: var(--main-color-white);
-    width: 40px;
-    height: 40px;
-    border-radius: 5px 0 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-i.fa-cog:hover
-{   
-    animation: 1s rotate linear infinite;
-}
-.setting-icon i
-{
-    color: var(--main-color);
-    font-size: 1.5rem;
-}
