@@ -1,4 +1,4 @@
-@media screen and (max-width: 367px)
+@media screen and (max-width: 500px)
 {    
     .nav-content i.fa-bars
     {
@@ -11,18 +11,11 @@
         font-size: 1.2rem;
     }
 
-    .services .offered-services,
-    .clients-container .clients,
-    .fun-facts-container .fun-facts
+    section#about-me .services i, 
+    section#about-me .clients i, 
+    section#about-me .fun-facts i 
     {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .services .offered-services .service,
-    .fun-facts .fun-fact-item
-    {
-        width: 90%;
+        font-size: 2rem;
     }
 }
 
@@ -123,6 +116,24 @@
     .about-me-content .testimonials p
     {
         width: 90%;
+    }
+
+    
+    .services .offered-services,
+    .fun-facts-container .fun-facts
+    {
+        justify-content: center;
+    }
+    
+    .services .offered-services .service,
+    .fun-facts .fun-fact-item
+    {
+        width: 100%;
+    }
+
+    .clients-container .clients i
+    {
+        width: 40%;
     }
 }
 
