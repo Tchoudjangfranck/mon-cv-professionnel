@@ -1,0 +1,117 @@
+.year
+{
+    padding: 5px 5px 5px 30px;
+    background-color: var(--main-color-green);
+    color: var(--main-color-white);
+    display: inline-block;
+    margin: 10px 0;
+    margin-top: inherit;
+    border-radius: 3px 3px 3px 0px;
+}
+
+.education-item,
+.experience-item,
+.design-skill-item
+{
+    width: 100%;
+}
+
+.education-item,
+.experience-item
+{
+    border-left: 1px solid #ccc;
+    height: 200px;
+    min-width: 220px;
+    min-height: 220px;
+    padding-top: 20px;
+}
+
+.education-details,
+.experience-details
+{
+    padding: 0 30px;
+}
+
+.education-details .education-title,
+.experience-details .experience-title
+{
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 15px 0;
+    margin-bottom: 5px;
+}
+
+.education-location,
+.experience-location
+{
+    margin: 5px 0;
+    margin-bottom: 10px;
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.competence-title
+{
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.progress
+{
+    width: 90%;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    height: 5px;
+    border: 3px solid var(--main-color);
+    padding: 5px;
+}
+
+.progress .value
+{
+    height: 100%;
+    border-radius: 50px;
+    width: 70%;
+    background-color: var(--main-color);
+}
+
+#graphic-design .value,
+#css .value
+{
+    width: 30%;
+}
+
+#print-design .value,
+#jquery .value
+{
+    width: 20%;
+}
+
+#wordpress .value
+{
+    width: 10%;
+}
+
+#php .value
+{
+    width: 8%;
+}
+
+.resume-footer
+{
+    margin: 50px 0;
+}
+
+.download-cv-btn button
+{
+    text-transform: capitalize;
+    padding: 10px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid var(--main-color);
+}
+
+.download-cv-btn button:hover
+{
+    background-color: var(--main-color);
+    color: var(--main-color-white);
+}

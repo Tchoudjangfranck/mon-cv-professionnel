@@ -63,12 +63,12 @@
         padding-top: inherit;
     }
 
-     section#about-me .about-me-header
+     section .section-header
     {
         padding: 70px 0 10px 0;
     }
 
-     #about-me .about-me-header h2
+     .section-header h2
      {
         white-space: nowrap;
         padding: 10px 10px 10px 40px;
@@ -104,6 +104,14 @@
     {
         padding-bottom: 40px;
     }
+
+    .education-container,
+    .experience-container,
+    .design-skills-container
+    {
+        width: 100% !important;        
+    }
+    
 }
 
 @media screen and (max-width:870.98px)
@@ -136,6 +144,22 @@
         width: 40%;
     }
 }
+
+@media screen and (max-width:1000px)
+{
+    .resume-content .resume
+    {
+        flex-direction: column;
+    }   
+    
+    .education-container,
+    .experience-container,
+    .design-skills-container
+    {
+        width: 80% !important;
+        margin: 0 auto;        
+    }
+} 
 
 @media screen and (min-width:768px) 
 {
