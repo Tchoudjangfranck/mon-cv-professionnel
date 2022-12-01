@@ -1,12 +1,37 @@
 var aside = document.querySelector("aside");
 var asideLi = document.querySelectorAll(".aside-content ul li");
+var body = document.getElementsByTagName("body")[0];
+console.log(body);
+var section = document.getElementsByTagName("section");
 
 var listenerFunctions =
 {
+
+    getSection: function()
+    {
+        for (let index = 0; index < section.length; index++) 
+        {
+            const element =  section[index];
+            //console.log(element);
+            if (aside.classList.contains("none")) 
+            {
+                element.style.overflow = "hidden";    
+            } 
+            else 
+            {
+                element.style.overflow = "auto";    
+            }
+        }
+
+    },
+
     openAndCloseAside: function()
     {
+        listenerFunctions.getSection();
+
         if (!aside.classList.contains("none")) 
-        {       
+        {     
+            body.style.overflow= "auto";
             aside.classList.toggle("close");    
             setTimeout(() => 
             {
@@ -16,17 +41,17 @@ var listenerFunctions =
         } 
         else 
         {
+            listenerFunctions.getSection();
+            body.style.overflow= "hidden";
             aside.classList.toggle("none");    
         }
-
-    }
-    
-    
+    }   
 }
 
 
 var setUpListener = () =>
 {
+    
     var burger_icon = document.getElementById("burger-icon");
     burger_icon.addEventListener("click", listenerFunctions.openAndCloseAside);
     

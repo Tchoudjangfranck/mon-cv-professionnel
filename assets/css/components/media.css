@@ -17,6 +17,21 @@
     {
         font-size: 2rem;
     }
+
+    .portfolio-content .categories ul
+    {
+        gap: 5px;
+    }
+    .portfolio-content .categories ul li
+    {
+        padding: 5px;
+    }
+
+    .portfolio-content .projects .project-item
+    {
+        width: 90%;
+        height: 200px;
+    }
 }
 
 @media screen and (max-width:767.98px)
@@ -68,7 +83,7 @@
         padding: 70px 0 10px 0;
     }
 
-     .section-header h2
+     section .section-header h2
      {
         white-space: nowrap;
         padding: 10px 10px 10px 40px;
@@ -125,7 +140,6 @@
     {
         width: 90%;
     }
-
     
     .services .offered-services,
     .fun-facts-container .fun-facts
@@ -142,6 +156,12 @@
     .clients-container .clients i
     {
         width: 40%;
+    }
+
+    .portfolio-content .project-item
+    {
+        width: 210px;
+        height: 150px;
     }
 }
 
