@@ -1,7 +1,8 @@
 var aside = document.querySelector("aside");
 var asideLi = document.querySelectorAll(".aside-content ul li");
 var body = document.getElementsByTagName("body")[0];
-console.log(body);
+
+//console.log(body);
 var section = document.getElementsByTagName("section");
 
 var listenerFunctions =
