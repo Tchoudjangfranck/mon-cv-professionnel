@@ -6,7 +6,6 @@ var section = document.getElementsByTagName("section");
 
 var listenerFunctions =
 {
-
     getSection: function()
     {
         for (let index = 0; index < section.length; index++) 
@@ -15,10 +14,12 @@ var listenerFunctions =
             //console.log(element);
             if (aside.classList.contains("none")) 
             {
+                body.style.overflow= "hidden";
                 element.style.overflow = "hidden";    
             } 
             else 
             {
+                body.style.overflow= "auto";
                 element.style.overflow = "auto";    
             }
         }
@@ -31,7 +32,6 @@ var listenerFunctions =
 
         if (!aside.classList.contains("none")) 
         {     
-            body.style.overflow= "auto";
             aside.classList.toggle("close");    
             setTimeout(() => 
             {
@@ -42,7 +42,6 @@ var listenerFunctions =
         else 
         {
             listenerFunctions.getSection();
-            body.style.overflow= "hidden";
             aside.classList.toggle("none");    
         }
     }   
