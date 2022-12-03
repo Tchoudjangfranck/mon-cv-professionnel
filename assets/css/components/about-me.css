@@ -5,6 +5,7 @@
 
 .section-header h2
 {
+    position: relative;
     background-color: var(--main-color);
     padding: 10px 20px 10px 100px;
     border-radius: 5px;
@@ -12,6 +13,18 @@
     color: var(--main-color-white);
     border-bottom-left-radius: 0;
     font-size: 1.5rem;
+}
+
+.section-header h2::after
+{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--main-color);
+    border: 5px solid var(--main-color);
+    border-left: 5px solid var(--main-color-white);
+    border-bottom: 5px solid var(--main-color-white);
 }
 
 .section-header p
@@ -36,7 +49,7 @@ section .container-title h3
 {
     border-bottom: 3px solid var(--main-color);
     font-size: 1.1rem;
-    margin: 30px 0;
+    margin: 30px 0 50px 0 ;
     display: inline-block;
 }
 
